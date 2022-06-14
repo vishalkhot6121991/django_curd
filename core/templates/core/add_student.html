@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% block title %}HOME {% endblock title %}
+
+{% block contain %}
+<section class="container">
+    <h3 class="fw-bold btn-danger justify-content-around my-4  text-center " > CRUD DJANGO OPERATION</h3>
+    
+    <div class="container">
+        <div class="row justify-content-around mt-3 my-2  ">
+            <div class="col-sm-4">
+                <form action="" method="post" class="bg-white p-3 rounded shadow">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <input type="submit" value="submit " class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+
+{% endblock contain %}
+
+
+
